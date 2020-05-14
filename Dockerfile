@@ -19,7 +19,7 @@ RUN mkdir /var/build/php-7-bin
 RUN curl -sL https://github.com/php/php-src/archive/php-7.3.0.tar.gz | tar -xvz
 WORKDIR /var/build/php-src-php-7.3.0
 
-# Compile PHP 7.3.0 with OpenSSL 1.0.1 support, and install to /home/ec2-user/php-7-bin
+# Compile PHP 7.3.0 with OpenSSL 1.0.1 support
 RUN ./buildconf --force
 RUN ./configure --prefix=/opt/php/ --with-openssl=/usr/local/ssl --with-curl --with-zlib --without-pear
 RUN make install
