@@ -1,4 +1,4 @@
-FROM amazonlinux:2017.03.1.20170812
+FROM amazonlinux:2018.03
 
 # Update packages and install needed compilation dependencies
 RUN yum update -y
