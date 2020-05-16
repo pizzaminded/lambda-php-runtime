@@ -1,0 +1,5 @@
+#!/opt/bin/php
+<?php
+/**
+ * This file will be a "Front Controller" for requests.
+ */
